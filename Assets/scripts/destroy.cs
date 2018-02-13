@@ -7,8 +7,9 @@ public class destroy : MonoBehaviour {
 	public GameObject bowl;
 	public MeshCollider bomesh;
 
-	public Camera camera1;
-	public Camera camera2;
+	public Camera camera1;  //the one we jsut came from
+	public Camera camera3; //camera goal
+	public Camera camera2; //the one before
 
 	/*var Camera1 Camera;
 	var Camera2 Camera;*/
@@ -30,9 +31,10 @@ public class destroy : MonoBehaviour {
 		Destroy (bomesh);
 		//GameObject myGameObject = new GameObject("Test Object");
 		//Rigidbody gameObjectsRigidBody = bowl.AddComponent<Rigidbody>;
-
+		camera3.gameObject.SetActive(true);
+		camera2.enabled = false;
 		camera1.enabled = false;
-		camera2.enabled = true; 
+		camera3.enabled = true; 
 
 	
 	}
