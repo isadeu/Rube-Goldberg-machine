@@ -8,7 +8,7 @@ public class follow : MonoBehaviour {
 	//public float movspeed = 0;
 	// Use this for initialization
 	void Start () {
-		
+		print(Screen.currentResolution);
 	}
 	
 	// Update is called once per frame

@@ -13,7 +13,7 @@ public class rotation : MonoBehaviour {
 	void Update () {
 
 		//transform.Rotate(Vector3.left * Time.deltaTime * 10);
-		transform.Rotate(Vector3.up * ( Time.deltaTime * 12), Space.World);
+		transform.Rotate(Vector3.up * ( Time.deltaTime * 25), Space.World);
 	
 		
 	}
